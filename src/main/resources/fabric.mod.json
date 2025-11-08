@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
-  "id": "nccl",
+  "id": "slashlength",
   "version": "${version}",
-  "name": "NoCommandChatLimit",
+  "name": "Slash Length",
   "description": "A simple mod that removes the chat limit when typing commands",
   "authors": [
-    "RamGames"
+    "Ramixin"
   ],
   "contact": {
-    "repo": "https://github.com/RamGemes/NoCommandChatLimit"
+    "repo": "https://github.com/Ramixin/SlashLength"
   },
   "license": "MIT",
-  "icon": "assets/nccl/icon.png",
+  "icon": "assets/slashlength/icon.png",
   "environment": "client",
   "mixins": [
-    "nccl.mixins.json"
+    "slashlength.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "minecraft": ">=1.19.3"
+    "minecraft": ">=1.20.2"
   }
 }

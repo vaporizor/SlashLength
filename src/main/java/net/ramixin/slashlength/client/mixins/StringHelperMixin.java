@@ -1,4 +1,4 @@
-package net.ramgames.nccl.client.mixins;
+package net.ramixin.slashlength.client.mixins;
 
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
