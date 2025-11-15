@@ -12,7 +12,6 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(TextFieldWidget.class)
 public abstract class TextFieldWidgetMixin implements TextFieldWidgetDuck {
 
-    @Shadow public abstract void setMaxLength(int maxLength);
     @Shadow private int selectionStart;
     @Shadow private int selectionEnd;
 
@@ -28,7 +27,7 @@ public abstract class TextFieldWidgetMixin implements TextFieldWidgetDuck {
             } else isCommand = text.startsWith("/");
         }
         if (isCommand) instance.setMaxLength(Integer.MAX_VALUE);
-        else this.setMaxLength(256);
+        else instance.setMaxLength(256);
         original.call(instance, text);
     }
 
